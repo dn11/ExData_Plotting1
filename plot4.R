@@ -98,7 +98,7 @@ legend("topright", lty=c(1,1,1), col = c("black", "red", "blue"),
                   "Sub_metering_3"),bty="n")
 
 # Add plot 4: Global reactive power
-plot(dateTimes,GlobalReactivePower,ylab="Global reactive power",
+plot(dateTimes,GlobalReactivePower,ylab="Global_reactive_power",
      xlab="datetime",main="",type="l")
 
 # close the PNG device
