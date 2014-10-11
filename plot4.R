@@ -67,8 +67,9 @@ dateTimes<-as.POSIXct(strptime(paste(dates,times), "%Y-%m-%d %H:%M:%S"))
 ## Plot 4
 # open PNG device
 png(file="plot4.png",width=480,height=480)
-par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
-
+par(mfrow = c(2, 2))
+#oma = c(1, 0, 0, 2)
+#mar = c(4, 4, 2, 1),
 # Add plot 1: Global Active Power (kilowatts)
 plot(dateTimes,globalActivePower,ylab="Global Active Power",
      xlab="",main="",type="l")
